@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91374184-2E3B-4253-87EF-0588B01B4F06}</ProjectGuid>
+    <RootNamespace>CryptTool</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="BlockAES.h" />
+    <ClInclude Include="BlockAESDialogChushi.h" />
+    <ClInclude Include="BlockAESDialogKey.h" />
+    <ClInclude Include="BlockAESDialogLun.h" />
+    <ClInclude Include="BlockAESDialogZuihou.h" />
+    <ClInclude Include="BlockAESForm.h" />
+    <ClInclude Include="BlockDES.h" />
+    <ClInclude Include="BlockDESForm.h" />
+    <ClInclude Include="BlockIDEA.h" />
+    <ClInclude Include="BlockIDEADialogKey.h" />
+    <ClInclude Include="BlockIDEADialogLun.h" />
+    <ClInclude Include="BlockIDEADialogZuihou.h" />
+    <ClInclude Include="BlockIDEAForm.h" />
+    <ClInclude Include="ClassicDaihuan.h" />
+    <ClInclude Include="ClassicDaihuanForm.h" />
+    <ClInclude Include="ClassicKaisa.h" />
+    <ClInclude Include="ClassicKaisaForm.h" />
+    <ClInclude Include="CodeBase64Form.h" />
+    <ClInclude Include="CodeCalcForm.h" />
+    <ClInclude Include="CodeColorForm.h" />
+    <ClInclude Include="CodeHashForm.h" />
+    <ClInclude Include="CodeQrForm.h" />
+    <ClInclude Include="CodeRandomForm.h" />
+    <ClInclude Include="CodeStringForm.h" />
+    <ClInclude Include="CodeUrlForm.h" />
+    <ClInclude Include="CryptCube.h" />
+    <ClInclude Include="CryptCubeDoc.h" />
+    <ClInclude Include="CryptCubeForm.h" />
+    <ClInclude Include="CStringConvert.h" />
+    <ClInclude Include="Dialog.h" />
+    <ClInclude Include="EncryptFileForm.h" />
+    <ClInclude Include="EncryptStringForm.h" />
+    <ClInclude Include="Form.h" />
+    <ClInclude Include="HashMD5.h" />
+    <ClInclude Include="HashMD5Form.h" />
+    <ClInclude Include="HashSHAForm.h" />
+    <ClInclude Include="HelpForm.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="PublicKeyDHForm.h" />
+    <ClInclude Include="PublicKeyECC.h" />
+    <ClInclude Include="PublicKeyECCForm.h" />
+    <ClInclude Include="PublicKeyElGamal.h" />
+    <ClInclude Include="PublicKeyElGamalForm.h" />
+    <ClInclude Include="PublicKeyRSA.h" />
+    <ClInclude Include="PublicKeyRSAForm.h" />
+    <ClInclude Include="QRCodeEncode.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RibbonBar.h" />
+    <ClInclude Include="RibbonButton.h" />
+    <ClInclude Include="SignatureDSAForm.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StreamRC4.h" />
+    <ClInclude Include="StreamRC4DialogList.h" />
+    <ClInclude Include="StreamRC4DialogText.h" />
+    <ClInclude Include="StreamRC4Form.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\background.png" />
+    <Image Include="res\CryptCube.ico" />
+    <Image Include="res\CryptCubeDoc.ico" />
+    <Image Include="res\help.png" />
+    <Image Include="res\helpsmall.png" />
+    <Image Include="res\IDEA1.png" />
+    <Image Include="res\IDEA2.png" />
+    <Image Include="res\main.png" />
+    <Image Include="res\menu.png" />
+    <Image Include="res\Toolbar.png" />
+    <Image Include="res\Toolbar2.png" />
+    <Image Include="res\website.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CryptCube.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\CryptCube.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="BlockAES.cpp" />
+    <ClCompile Include="BlockAESDialogChushi.cpp" />
+    <ClCompile Include="BlockAESDialogKey.cpp" />
+    <ClCompile Include="BlockAESDialogLun.cpp" />
+    <ClCompile Include="BlockAESDialogZuihou.cpp" />
+    <ClCompile Include="BlockAESForm.cpp" />
+    <ClCompile Include="BlockDES.cpp" />
+    <ClCompile Include="BlockDESForm.cpp" />
+    <ClCompile Include="BlockIDEA.cpp" />
+    <ClCompile Include="BlockIDEADialogKey.cpp" />
+    <ClCompile Include="BlockIDEADialogLun.cpp" />
+    <ClCompile Include="BlockIDEADialogZuihou.cpp" />
+    <ClCompile Include="BlockIDEAForm.cpp" />
+    <ClCompile Include="ClassicDaihuan.cpp" />
+    <ClCompile Include="ClassicDaihuanForm.cpp" />
+    <ClCompile Include="ClassicKaisa.cpp" />
+    <ClCompile Include="ClassicKaisaForm.cpp" />
+    <ClCompile Include="CodeBase64Form.cpp" />
+    <ClCompile Include="CodeCalcForm.cpp" />
+    <ClCompile Include="CodeColorForm.cpp" />
+    <ClCompile Include="CodeHashForm.cpp" />
+    <ClCompile Include="CodeQrForm.cpp" />
+    <ClCompile Include="CodeRandomForm.cpp" />
+    <ClCompile Include="CodeStringForm.cpp" />
+    <ClCompile Include="CodeUrlForm.cpp" />
+    <ClCompile Include="CryptCube.cpp" />
+    <ClCompile Include="CryptCubeDoc.cpp" />
+    <ClCompile Include="CryptCubeForm.cpp" />
+    <ClCompile Include="CStringConvert.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="EncryptFileForm.cpp" />
+    <ClCompile Include="EncryptStringForm.cpp" />
+    <ClCompile Include="Form.cpp" />
+    <ClCompile Include="HashMD5.cpp" />
+    <ClCompile Include="HashMD5Form.cpp" />
+    <ClCompile Include="HashSHAForm.cpp" />
+    <ClCompile Include="HelpForm.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="PublicKeyDHForm.cpp" />
+    <ClCompile Include="PublicKeyECC.cpp" />
+    <ClCompile Include="PublicKeyECCForm.cpp" />
+    <ClCompile Include="PublicKeyElGamal.cpp" />
+    <ClCompile Include="PublicKeyElGamalForm.cpp" />
+    <ClCompile Include="PublicKeyRSA.cpp" />
+    <ClCompile Include="PublicKeyRSAForm.cpp" />
+    <ClCompile Include="QRCodeEncode.cpp" />
+    <ClCompile Include="RibbonBar.cpp" />
+    <ClCompile Include="RibbonButton.cpp" />
+    <ClCompile Include="SignatureDSAForm.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StreamRC4.cpp" />
+    <ClCompile Include="StreamRC4DialogList.cpp" />
+    <ClCompile Include="StreamRC4DialogText.cpp" />
+    <ClCompile Include="StreamRC4Form.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CryptCube.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
