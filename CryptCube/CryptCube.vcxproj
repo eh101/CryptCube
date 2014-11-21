@@ -186,6 +186,10 @@
     <ResourceCompile Include="CryptCube.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Backup\CryptCube.sln" />
+    <None Include="..\UpgradeLog.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="res\CryptCube.rc2" />
   </ItemGroup>
@@ -250,6 +254,7 @@
     <ClCompile Include="StreamRC4Form.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="..\Backup\Readme.txt" />
     <Text Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

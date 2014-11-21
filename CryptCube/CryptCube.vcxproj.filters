@@ -43,6 +43,9 @@
     <Filter Include="源文件\Crypt">
       <UniqueIdentifier>{eaf200b7-53c5-4ced-bf77-8529d19ed680}</UniqueIdentifier>
     </Filter>
+    <Filter Include="bak">
+      <UniqueIdentifier>{fff3f172-b4b0-4aab-b310-8ef66917d6ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CryptCube.h">
@@ -265,6 +268,10 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="ClassDiagram1.cd" />
+    <None Include="..\Backup\CryptCube.sln">
+      <Filter>bak</Filter>
+    </None>
+    <None Include="..\UpgradeLog.htm" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CryptCube.cpp">
@@ -435,5 +442,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />
+    <Text Include="..\Backup\Readme.txt">
+      <Filter>bak</Filter>
+    </Text>
   </ItemGroup>
 </Project>
